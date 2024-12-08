@@ -1,0 +1,784 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+1V8 #PWR048
+U 1 1 61702083
+P 2250 1300
+F 0 "#PWR048" H 2250 1150 50  0001 C CNN
+F 1 "+1V8" V 2265 1428 50  0000 L CNN
+F 2 "" H 2250 1300 50  0001 C CNN
+F 3 "" H 2250 1300 50  0001 C CNN
+	1    2250 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR047
+U 1 1 61702089
+P 2250 1200
+F 0 "#PWR047" H 2250 1050 50  0001 C CNN
+F 1 "VCC" H 2265 1373 50  0000 C CNN
+F 2 "" H 2250 1200 50  0001 C CNN
+F 3 "" H 2250 1200 50  0001 C CNN
+	1    2250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 6170208F
+P 3250 1600
+F 0 "#PWR049" H 3250 1350 50  0001 C CNN
+F 1 "GND" H 3255 1427 50  0000 C CNN
+F 2 "" H 3250 1600 50  0001 C CNN
+F 3 "" H 3250 1600 50  0001 C CNN
+	1    3250 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 1400 2    50   Input ~ 0
+TX1
+Text GLabel 3250 1300 2    50   Input ~ 0
+RX1
+Text GLabel 3250 1200 2    50   Input ~ 0
+SWO
+Text GLabel 2250 1500 0    50   Input ~ 0
+SWDCLK
+Text GLabel 2250 1600 0    50   Input ~ 0
+SWDIO
+Text GLabel 2250 1400 0    50   Input ~ 0
+NRESET
+Text GLabel 1450 4100 0    50   Input ~ 0
+RSTSIM
+Text GLabel 1450 4200 0    50   Input ~ 0
+CLKSIM
+Text GLabel 1450 4300 0    50   Input ~ 0
+DATSIM
+$Comp
+L NRF91GAP-Superflat-rescue:CM1402-03CP-SamacSys_Parts-NRF91GAP-rescue SIMESDPROTECT?
+U 1 1 61723D27
+P 3950 4000
+AR Path="/61695560/61723D27" Ref="SIMESDPROTECT?"  Part="1" 
+AR Path="/616FC56F/61723D27" Ref="SIMESDPROTECT1"  Part="1" 
+F 0 "SIMESDPROTECT1" H 5150 4265 50  0000 C CNN
+F 1 "CM1402-03CP" H 5150 4174 50  0000 C CNN
+F 2 "CM140203CP" H 6200 4100 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/CM1402-D.PDF" H 6200 4000 50  0001 L CNN
+F 4 "EMI Filter Circuits SIM CARD EMI FILTER WITH ESD PROTECTION" H 6200 3900 50  0001 L CNN "Description"
+F 5 "0.72" H 6200 3800 50  0001 L CNN "Height"
+F 6 "748-CM1402-03CP" H 6200 3700 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/CM1402-03CP?qs=lLuKAerq7nnG203YjtyI%252BA%3D%3D" H 6200 3600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 6200 3500 50  0001 L CNN "Manufacturer_Name"
+F 9 "CM1402-03CP" H 6200 3400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3950 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4000 1450 4000
+Wire Wire Line
+	1450 4000 1450 3800
+Wire Wire Line
+	3950 4400 3950 4600
+Wire Wire Line
+	1450 4100 1550 4100
+Wire Wire Line
+	1450 4200 1550 4200
+Wire Wire Line
+	1450 4300 1550 4300
+$Comp
+L NRF91GAP-Superflat-rescue:GRM033C80J105ME05D-SamacSys_Parts-NRF91GAP-rescue 1uF?
+U 1 1 61723D3E
+P 3100 4900
+AR Path="/5F451091/61723D3E" Ref="1uF?"  Part="1" 
+AR Path="/5F450D9F/61723D3E" Ref="1uF?"  Part="1" 
+AR Path="/61695560/61723D3E" Ref="1uF?"  Part="1" 
+AR Path="/616FC56F/61723D3E" Ref="1uF1"  Part="1" 
+F 0 "1uF1" H 3350 5165 50  0000 C CNN
+F 1 "GRM033C80J105ME05D" H 3350 5074 50  0000 C CNN
+F 2 "CAPC0603X33N" H 3450 4950 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM033C80J105ME05D.pdf" H 3450 4850 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT" H 3450 4750 50  0001 L CNN "Description"
+F 5 "0.33" H 3450 4650 50  0001 L CNN "Height"
+F 6 "81-GRM033C80J105ME5D" H 3450 4550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM033C80J105ME5D" H 3450 4450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 3450 4350 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033C80J105ME05D" H 3450 4250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4300 4050 4300
+Wire Wire Line
+	3950 4600 3100 4600
+Wire Wire Line
+	3100 4600 3100 4900
+Wire Wire Line
+	4100 4300 4100 4900
+$Comp
+L power:GND #PWR?
+U 1 1 61723D4A
+P 3100 4900
+AR Path="/61695560/61723D4A" Ref="#PWR?"  Part="1" 
+AR Path="/616FC56F/61723D4A" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 3100 4650 50  0001 C CNN
+F 1 "GND" H 3105 4727 50  0000 C CNN
+F 2 "" H 3100 4900 50  0001 C CNN
+F 3 "" H 3100 4900 50  0001 C CNN
+	1    3100 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 4900
+Wire Wire Line
+	4050 4300 4050 3900
+Wire Wire Line
+	4050 3900 4400 3900
+Connection ~ 4050 4300
+Wire Wire Line
+	4050 4300 4100 4300
+$Comp
+L power:GND #PWR?
+U 1 1 61723D55
+P 1450 3800
+AR Path="/61695560/61723D55" Ref="#PWR?"  Part="1" 
+AR Path="/616FC56F/61723D55" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 1450 3550 50  0001 C CNN
+F 1 "GND" V 1455 3672 50  0000 R CNN
+F 2 "" H 1450 3800 50  0001 C CNN
+F 3 "" H 1450 3800 50  0001 C CNN
+	1    1450 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4900 4100 4900
+Text GLabel 4100 4900 3    50   Input ~ 0
+SIM1.8v
+NoConn ~ 1550 4400
+Wire Wire Line
+	4400 3900 4400 3400
+Wire Wire Line
+	4400 3400 5100 3400
+Wire Wire Line
+	4450 4000 4450 3500
+Wire Wire Line
+	4450 3500 5100 3500
+Wire Wire Line
+	3950 4000 4450 4000
+NoConn ~ 5100 3800
+$Comp
+L power:GND #PWR059
+U 1 1 6165E2C0
+P 5100 3700
+F 0 "#PWR059" H 5100 3450 50  0001 C CNN
+F 1 "GND" V 5105 3572 50  0000 R CNN
+F 2 "" H 5100 3700 50  0001 C CNN
+F 3 "" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 4200 4150 4200
+$Comp
+L power:GND #PWR076
+U 1 1 61776306
+P 9450 4150
+F 0 "#PWR076" H 9450 3900 50  0001 C CNN
+F 1 "GND" V 9455 4022 50  0000 R CNN
+F 2 "" H 9450 4150 50  0001 C CNN
+F 3 "" H 9450 4150 50  0001 C CNN
+	1    9450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR084
+U 1 1 61776FB4
+P 9450 3750
+F 0 "#PWR084" H 9450 3600 50  0001 C CNN
+F 1 "+5V" V 9465 3878 50  0000 L CNN
+F 2 "" H 9450 3750 50  0001 C CNN
+F 3 "" H 9450 3750 50  0001 C CNN
+	1    9450 3750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9450 5850 0    50   Input ~ 0
+P1
+Text GLabel 10350 5950 2    50   Input ~ 0
+P0
+Text GLabel 9450 5350 0    50   Input ~ 0
+P11
+Text GLabel 9450 5550 0    50   Input ~ 0
+P7
+Text GLabel 10350 5650 2    50   Input ~ 0
+P6
+Text GLabel 9450 5650 0    50   Input ~ 0
+P5
+Text GLabel 10350 5750 2    50   Input ~ 0
+P4
+Text GLabel 9450 5750 0    50   Input ~ 0
+P3
+Text GLabel 10350 5850 2    50   Input ~ 0
+P2
+Text GLabel 9450 5250 0    50   Input ~ 0
+P13
+Text GLabel 9450 4350 0    50   Input ~ 0
+P31
+Text GLabel 10350 4450 2    50   Input ~ 0
+P30
+Text GLabel 9450 4450 0    50   Input ~ 0
+P29
+Text GLabel 10350 4550 2    50   Input ~ 0
+P28
+Text GLabel 9450 4550 0    50   Input ~ 0
+P27
+Text GLabel 9450 4650 0    50   Input ~ 0
+P25
+Text GLabel 10350 4750 2    50   Input ~ 0
+P24
+Text GLabel 9450 4750 0    50   Input ~ 0
+P23
+Text GLabel 10350 4850 2    50   Input ~ 0
+P22
+Text GLabel 10350 5150 2    50   Input ~ 0
+P16
+Text GLabel 9450 5050 0    50   Input ~ 0
+P17
+Text GLabel 10350 5050 2    50   Input ~ 0
+P18
+Text GLabel 9450 4950 0    50   Input ~ 0
+P19
+Text GLabel 10350 4950 2    50   Input ~ 0
+P20
+Text GLabel 9450 4850 0    50   Input ~ 0
+P21
+Text GLabel 5150 1700 0    50   Input ~ 0
+SCK
+Text GLabel 5150 1900 0    50   Input ~ 0
+MOSI
+Text GLabel 5150 2100 0    50   Input ~ 0
+MISO
+Text GLabel 5150 2300 0    50   Input ~ 0
+CS
+$Comp
+L power:GND #PWR064
+U 1 1 616A1EBD
+P 5550 2700
+F 0 "#PWR064" H 5550 2450 50  0001 C CNN
+F 1 "GND" V 5555 2572 50  0000 R CNN
+F 2 "" H 5550 2700 50  0001 C CNN
+F 3 "" H 5550 2700 50  0001 C CNN
+	1    5550 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+1V8 #PWR056
+U 1 1 616A3302
+P 4750 1300
+F 0 "#PWR056" H 4750 1150 50  0001 C CNN
+F 1 "+1V8" V 4765 1428 50  0000 L CNN
+F 2 "" H 4750 1300 50  0001 C CNN
+F 3 "" H 4750 1300 50  0001 C CNN
+	1    4750 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 1300 4900 1300
+Wire Wire Line
+	5150 1300 5150 1500
+Wire Wire Line
+	5150 1300 5450 1300
+Connection ~ 5150 1300
+$Comp
+L NRF91GAP-Superflat-rescue:GRM033R60J104KE19J-SamacSys_Parts-NRF91GAP-rescue 100nF?
+U 1 1 616A8E71
+P 4900 1300
+AR Path="/61695560/616A8E71" Ref="100nF?"  Part="1" 
+AR Path="/616FC56F/616A8E71" Ref="100nF8"  Part="1" 
+F 0 "100nF8" H 5050 1000 50  0000 L CNN
+F 1 "GRM033R60J104KE19J" H 4900 1100 50  0000 L CNN
+F 2 "CAPC0603X33N" H 5250 1350 50  0001 L CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf" H 5250 1250 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 6.3Volts X5R 10%" H 5250 1150 50  0001 L CNN "Description"
+F 5 "0.33" H 5250 1050 50  0001 L CNN "Height"
+F 6 "81-GRM033R60J104KE9J" H 5250 950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM033R60J104KE19J?qs=QDXoN8f0aYLGz627rNNvOA%3D%3D" H 5250 850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 5250 750 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033R60J104KE19J" H 5250 650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4900 1300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4900 1300
+Wire Wire Line
+	4900 1300 5150 1300
+$Comp
+L power:GND #PWR057
+U 1 1 616ABDBA
+P 4900 800
+F 0 "#PWR057" H 4900 550 50  0001 C CNN
+F 1 "GND" H 4905 627 50  0000 C CNN
+F 2 "" H 4900 800 50  0001 C CNN
+F 3 "" H 4900 800 50  0001 C CNN
+	1    4900 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L NRF91GAP-Superflat-rescue:GRM033R60J104KE19J-SamacSys_Parts-NRF91GAP-rescue 100nF?
+U 1 1 616AEFFF
+P 6150 1300
+AR Path="/61695560/616AEFFF" Ref="100nF?"  Part="1" 
+AR Path="/616FC56F/616AEFFF" Ref="100nF10"  Part="1" 
+F 0 "100nF10" H 6300 1000 50  0000 L CNN
+F 1 "GRM033R60J104KE19J" H 6150 1100 50  0000 L CNN
+F 2 "CAPC0603X33N" H 6500 1350 50  0001 L CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf" H 6500 1250 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 6.3Volts X5R 10%" H 6500 1150 50  0001 L CNN "Description"
+F 5 "0.33" H 6500 1050 50  0001 L CNN "Height"
+F 6 "81-GRM033R60J104KE9J" H 6500 950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM033R60J104KE19J?qs=QDXoN8f0aYLGz627rNNvOA%3D%3D" H 6500 850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 6500 750 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033R60J104KE19J" H 6500 650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6150 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 1300 5650 1300
+$Comp
+L power:GND #PWR066
+U 1 1 616B5329
+P 6150 800
+F 0 "#PWR066" H 6150 550 50  0001 C CNN
+F 1 "GND" H 6155 627 50  0000 C CNN
+F 2 "" H 6150 800 50  0001 C CNN
+F 3 "" H 6150 800 50  0001 C CNN
+	1    6150 800 
+	-1   0    0    1   
+$EndComp
+Text GLabel 5950 2300 2    50   Input ~ 0
+CD\DAT3-CS
+Text GLabel 5950 2100 2    50   Input ~ 0
+DAT0\DO-MISO
+Text GLabel 5950 1900 2    50   Input ~ 0
+CMD\DI-MOSI
+Text GLabel 5950 1700 2    50   Input ~ 0
+CLK
+$Comp
+L power:+3V3 #PWR065
+U 1 1 616D2535
+P 6150 1300
+F 0 "#PWR065" H 6150 1150 50  0001 C CNN
+F 1 "+3V3" V 6165 1428 50  0000 L CNN
+F 2 "" H 6150 1300 50  0001 C CNN
+F 3 "" H 6150 1300 50  0001 C CNN
+	1    6150 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 4100 4500 4100
+Wire Wire Line
+	4500 4100 4500 3600
+Wire Wire Line
+	4500 3600 5100 3600
+Wire Wire Line
+	4550 3900 4550 4150
+Wire Wire Line
+	4550 4150 4150 4150
+Wire Wire Line
+	4150 4150 4150 4200
+Wire Wire Line
+	4550 3900 5100 3900
+Connection ~ 6150 1300
+Text Notes 5850 2750 0    50   ~ 0
+0,5mm
+Text Notes 2450 900  0    50   ~ 0
+Tag connect 6x2?
+Text Notes 3150 2100 0    50   ~ 0
+1,15mm
+Text Notes 6550 3250 0    50   ~ 0
+1,11mm
+Text GLabel 1900 2450 0    50   Input ~ 0
+CD\DAT3-CS
+Text GLabel 1900 2550 0    50   Input ~ 0
+CMD\DI-MOSI
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 6176E026
+P 1900 2650
+F 0 "#PWR0113" H 1900 2500 50  0001 C CNN
+F 1 "+3V3" V 1915 2778 50  0000 L CNN
+F 2 "" H 1900 2650 50  0001 C CNN
+F 3 "" H 1900 2650 50  0001 C CNN
+	1    1900 2650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1900 2750 0    50   Input ~ 0
+CLK
+$Comp
+L power:GND #PWR0114
+U 1 1 61770343
+P 1900 2850
+F 0 "#PWR0114" H 1900 2600 50  0001 C CNN
+F 1 "GND" V 1905 2722 50  0000 R CNN
+F 2 "" H 1900 2850 50  0001 C CNN
+F 3 "" H 1900 2850 50  0001 C CNN
+	1    1900 2850
+	0    1    1    0   
+$EndComp
+Text GLabel 1900 2950 0    50   Input ~ 0
+DAT0\DO-MISO
+Wire Wire Line
+	7400 3800 7400 3900
+Connection ~ 7400 3800
+Connection ~ 7400 3700
+Wire Wire Line
+	7400 3700 7400 3800
+Wire Wire Line
+	7400 3600 7400 3700
+$Comp
+L power:GND #PWR0115
+U 1 1 61793FF6
+P 7400 3900
+F 0 "#PWR0115" H 7400 3650 50  0001 C CNN
+F 1 "GND" V 7405 3772 50  0000 R CNN
+F 2 "" H 7400 3900 50  0001 C CNN
+F 3 "" H 7400 3900 50  0001 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:104224-0820 J6
+U 1 1 6175BE0C
+P 7400 3400
+F 0 "J6" H 8550 3665 50  0000 C CNN
+F 1 "104224-0820" H 8550 3574 50  0000 C CNN
+F 2 "1042240820" H 9550 3500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/104224-0820.pdf" H 9550 3400 50  0001 L CNN
+F 4 "Memory Card Connectors nanoSIM 1.11mm Card Conn 6Ckt Push/Pull" H 9550 3300 50  0001 L CNN "Description"
+F 5 "1.11" H 9550 3200 50  0001 L CNN "Height"
+F 6 "538-104224-0820" H 9550 3100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Molex/104224-0820?qs=vxeUf0TWHS1jUZuKusIpeg%3D%3D" H 9550 3000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Molex" H 9550 2900 50  0001 L CNN "Manufacturer_Name"
+F 9 "104224-0820" H 9550 2800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7400 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:TC2050-IDC-NL J5
+U 1 1 6179A680
+P 2750 1400
+F 0 "J5" H 2750 1865 50  0000 C CNN
+F 1 "TC2050-IDC-NL" H 2750 1774 50  0000 C CNN
+F 2 "TAG-CONNECT_TC2050-IDC-NL" H 2750 1400 50  0001 L BNN
+F 3 "" H 2750 1400 50  0001 L BNN
+F 4 "A" H 2750 1400 50  0001 L BNN "PARTREV"
+F 5 "Manufacturer recommendations" H 2750 1400 50  0001 L BNN "STANDARD"
+F 6 "" H 2750 1400 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "Tag-Connect" H 2750 1400 50  0001 L BNN "MANUFACTURER"
+	1    2750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:504740-5100 J7
+U 1 1 617A81CF
+P 10350 3450
+F 0 "J7" H 10800 3715 50  0000 C CNN
+F 1 "504740-5100" H 10800 3624 50  0000 C CNN
+F 2 "5047405100" H 11100 3550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/504740-5100.pdf" H 11100 3450 50  0001 L CNN
+F 4 "FFC & FPC Connectors 0.3 FPC BackFlipHsg Assy51CktEmbsTpPkg" H 11100 3350 50  0001 L CNN "Description"
+F 5 "1.65" H 11100 3250 50  0001 L CNN "Height"
+F 6 "538-504740-5100" H 11100 3150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=538-504740-5100" H 11100 3050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Molex" H 11100 2950 50  0001 L CNN "Manufacturer_Name"
+F 9 "504740-5100" H 11100 2850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10350 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 617C88AD
+P 10350 3750
+F 0 "#PWR0120" H 10350 3600 50  0001 C CNN
+F 1 "+5V" V 10365 3878 50  0000 L CNN
+F 2 "" H 10350 3750 50  0001 C CNN
+F 3 "" H 10350 3750 50  0001 C CNN
+	1    10350 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0121
+U 1 1 617C9D8E
+P 9450 3850
+F 0 "#PWR0121" H 9450 3700 50  0001 C CNN
+F 1 "+5V" V 9465 3978 50  0000 L CNN
+F 2 "" H 9450 3850 50  0001 C CNN
+F 3 "" H 9450 3850 50  0001 C CNN
+	1    9450 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 617CC7D8
+P 10350 3450
+F 0 "#PWR0122" H 10350 3200 50  0001 C CNN
+F 1 "GND" V 10355 3322 50  0000 R CNN
+F 2 "" H 10350 3450 50  0001 C CNN
+F 3 "" H 10350 3450 50  0001 C CNN
+	1    10350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 617CC7DE
+P 10350 3550
+F 0 "#PWR0123" H 10350 3300 50  0001 C CNN
+F 1 "GND" V 10355 3422 50  0000 R CNN
+F 2 "" H 10350 3550 50  0001 C CNN
+F 3 "" H 10350 3550 50  0001 C CNN
+	1    10350 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 617CDAFB
+P 9450 3550
+F 0 "#PWR0124" H 9450 3300 50  0001 C CNN
+F 1 "GND" V 9455 3422 50  0000 R CNN
+F 2 "" H 9450 3550 50  0001 C CNN
+F 3 "" H 9450 3550 50  0001 C CNN
+	1    9450 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 617CDB01
+P 9450 3450
+F 0 "#PWR0125" H 9450 3200 50  0001 C CNN
+F 1 "GND" V 9455 3322 50  0000 R CNN
+F 2 "" H 9450 3450 50  0001 C CNN
+F 3 "" H 9450 3450 50  0001 C CNN
+	1    9450 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 617D2934
+P 3250 1500
+F 0 "#PWR0126" H 3250 1250 50  0001 C CNN
+F 1 "GND" V 3255 1372 50  0000 R CNN
+F 2 "" H 3250 1500 50  0001 C CNN
+F 3 "" H 3250 1500 50  0001 C CNN
+	1    3250 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0128
+U 1 1 617DA891
+P 9450 3650
+F 0 "#PWR0128" H 9450 3500 50  0001 C CNN
+F 1 "+5V" V 9465 3778 50  0000 L CNN
+F 2 "" H 9450 3650 50  0001 C CNN
+F 3 "" H 9450 3650 50  0001 C CNN
+	1    9450 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 617DBA22
+P 10350 3650
+F 0 "#PWR0129" H 10350 3500 50  0001 C CNN
+F 1 "+5V" V 10365 3778 50  0000 L CNN
+F 2 "" H 10350 3650 50  0001 C CNN
+F 3 "" H 10350 3650 50  0001 C CNN
+	1    10350 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:DM3NW-SF-PEJ_800_ J4
+U 1 1 617FEFC7
+P 1900 2350
+F 0 "J4" H 2950 2615 50  0000 C CNN
+F 1 "DM3NW-SF-PEJ_800_" H 2950 2524 50  0000 C CNN
+F 2 "DM3NWSFPEJ800" H 3850 2450 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/6f893c6767fc5da6316eddcfe181658e.pdf" H 3850 2350 50  0001 L CNN
+F 4 "CONN MICROSD CARD PUSH-PUSH SMD" H 3850 2250 50  0001 L CNN "Description"
+F 5 "1.23" H 3850 2150 50  0001 L CNN "Height"
+F 6 "798-DM3NW-SF-PEJ800" H 3850 2050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/DM3NW-SF-PEJ800?qs=W0yvOO0ixfG2rFCy0X%2FeDQ%3D%3D" H 3850 1950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Hirose" H 3850 1850 50  0001 L CNN "Manufacturer_Name"
+F 9 "DM3NW-SF-PEJ(800)" H 3850 1750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1900 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1900 2350
+NoConn ~ 1900 3050
+NoConn ~ 4000 3050
+Wire Wire Line
+	4000 2350 4000 2450
+Wire Wire Line
+	4000 2450 4000 2550
+Connection ~ 4000 2450
+Connection ~ 4000 2550
+Wire Wire Line
+	4000 2550 4000 2650
+Connection ~ 4000 2650
+Wire Wire Line
+	4000 2650 4000 2750
+Connection ~ 4000 2750
+Wire Wire Line
+	4000 2750 4000 2850
+Connection ~ 4000 2850
+Wire Wire Line
+	4000 2850 4000 2950
+$Comp
+L power:GND #PWR0130
+U 1 1 6180DB0F
+P 4000 2350
+F 0 "#PWR0130" H 4000 2100 50  0001 C CNN
+F 1 "GND" H 4005 2177 50  0000 C CNN
+F 2 "" H 4000 2350 50  0001 C CNN
+F 3 "" H 4000 2350 50  0001 C CNN
+	1    4000 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 2350
+Text Notes 6500 2500 0    50   ~ 0
+Dont Populate Pin 10,11,12,13 when using a SD card\nMIRROR PINS ON OTHER CONNECTOR 51 -> 1
+NoConn ~ 7400 3500
+NoConn ~ 7400 3400
+Text GLabel 10350 5250 2    50   Input ~ 0
+P14
+Text GLabel 10350 5350 2    50   Input ~ 0
+P12
+Text GLabel 10350 5550 2    50   Input ~ 0
+P8
+Text GLabel 10350 5450 2    50   Input ~ 0
+P10
+Text GLabel 9450 5150 0    50   Input ~ 0
+P15
+Text GLabel 10350 4650 2    50   Input ~ 0
+P26
+Text GLabel 9450 5450 0    50   Input ~ 0
+P9
+$Comp
+L power:GND #PWR0118
+U 1 1 617C6447
+P 10350 4350
+F 0 "#PWR0118" H 10350 4100 50  0001 C CNN
+F 1 "GND" V 10355 4222 50  0000 R CNN
+F 2 "" H 10350 4350 50  0001 C CNN
+F 3 "" H 10350 4350 50  0001 C CNN
+	1    10350 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 617C55CC
+P 10350 3950
+F 0 "#PWR0117" H 10350 3700 50  0001 C CNN
+F 1 "GND" V 10355 3822 50  0000 R CNN
+F 2 "" H 10350 3950 50  0001 C CNN
+F 3 "" H 10350 3950 50  0001 C CNN
+	1    10350 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 617C795B
+P 10350 3850
+F 0 "#PWR0119" H 10350 3700 50  0001 C CNN
+F 1 "+5V" V 10365 3978 50  0000 L CNN
+F 2 "" H 10350 3850 50  0001 C CNN
+F 3 "" H 10350 3850 50  0001 C CNN
+	1    10350 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 61DBB943
+P 9450 4050
+AR Path="/6162B093/61DBB943" Ref="#PWR?"  Part="1" 
+AR Path="/616FC56F/61DBB943" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 9450 3900 50  0001 C CNN
+F 1 "+1V8" V 9465 4178 50  0000 L CNN
+F 2 "" H 9450 4050 50  0001 C CNN
+F 3 "" H 9450 4050 50  0001 C CNN
+	1    9450 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 61DBF584
+P 9450 3950
+F 0 "#PWR0127" H 9450 3700 50  0001 C CNN
+F 1 "GND" V 9455 3822 50  0000 R CNN
+F 2 "" H 9450 3950 50  0001 C CNN
+F 3 "" H 9450 3950 50  0001 C CNN
+	1    9450 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 61DC1799
+P 10350 4050
+AR Path="/6162B093/61DC1799" Ref="#PWR?"  Part="1" 
+AR Path="/616FC56F/61DC1799" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 10350 3900 50  0001 C CNN
+F 1 "+1V8" V 10365 4178 50  0000 L CNN
+F 2 "" H 10350 4050 50  0001 C CNN
+F 3 "" H 10350 4050 50  0001 C CNN
+	1    10350 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 61DC763C
+P 10350 4150
+F 0 "#PWR0132" H 10350 3900 50  0001 C CNN
+F 1 "GND" V 10355 4022 50  0000 R CNN
+F 2 "" H 10350 4150 50  0001 C CNN
+F 3 "" H 10350 4150 50  0001 C CNN
+	1    10350 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0133
+U 1 1 61DC9086
+P 9450 4250
+F 0 "#PWR0133" H 9450 4100 50  0001 C CNN
+F 1 "+3V3" V 9465 4378 50  0000 L CNN
+F 2 "" H 9450 4250 50  0001 C CNN
+F 3 "" H 9450 4250 50  0001 C CNN
+	1    9450 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0134
+U 1 1 61DC9F19
+P 10350 4250
+F 0 "#PWR0134" H 10350 4100 50  0001 C CNN
+F 1 "+3V3" V 10365 4378 50  0000 L CNN
+F 2 "" H 10350 4250 50  0001 C CNN
+F 3 "" H 10350 4250 50  0001 C CNN
+	1    10350 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Logic_LevelTranslator:TXB0104RUT U3
+U 1 1 62B00A5A
+P 5550 2000
+F 0 "U3" H 5550 1211 50  0000 C CNN
+F 1 "TXB0104RUT" H 5550 1120 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_R_PUQFN-N12" H 5550 1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 5660 2095 50  0001 C CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

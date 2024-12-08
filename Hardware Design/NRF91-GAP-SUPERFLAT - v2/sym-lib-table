@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name NRF91GAP-rescue)(type Legacy)(uri ${KIPRJMOD}/NRF91GAP-rescue.lib)(options "")(descr ""))
+  (lib (name NRF91GAP-Superflat-rescue)(type Legacy)(uri ${KIPRJMOD}/NRF91GAP-Superflat-rescue.lib)(options "")(descr ""))
+)

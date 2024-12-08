@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name XPS15-rescue)(type Legacy)(uri ${KIPRJMOD}/XPS15-rescue.lib)(options "")(descr ""))
+)
